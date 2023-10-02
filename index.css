@@ -1,9 +1,10 @@
 .resume-container {
     margin: auto;
-    background-color: rgb(132, 147, 159);
+    background-color: rgb(26, 27, 29);
     border: 5px solid rgb(19, 32, 19);
     width: 60%;
     box-sizing: border-box;
+    color: white;
 }
 
 .row {
@@ -106,11 +107,15 @@
 /* Resume summary */
 .general-info-summary {
     border: 5px solid rgb(231, 239, 12);
+    text-align: left;
+    padding: 5px;
 }
 
 /** Employment **/
 .emp_edu {
     border: 5px solid saddlebrown;
+    justify-content: center;
+    align-items: center;
 }
 
 .employment {
@@ -179,7 +184,9 @@
 /** Language Skills */
 .lang-skills {
     margin: 15px;
-    padding-bottom: 93px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
 }
 .eng-skills-dots {
     width: 15px; 
