@@ -3,6 +3,7 @@
     background-color: rgb(132, 147, 159);
     border: 5px solid rgb(19, 32, 19);
     width: 60%;
+    box-sizing: border-box;
 }
 
 .row {
@@ -67,10 +68,10 @@
 .general-info-name-image-txt-cont {
     text-align: left;
     margin-left: 6px;
-    padding-bottom: 42px;
-    /* margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 10px;
+    padding-bottom: 12px;
+    margin-left: 10px;
+    /* margin-top: 10px; */
+    /* padding-left: 10px;
     padding-right: 10px; */
 }
 
@@ -213,8 +214,6 @@
 }
 
 
-/* Add this at the end of your existing CSS file */
-
 /* Add a media query for screens below 768px */
 @media (max-width: 768px) {
   .resume-container {
@@ -227,6 +226,7 @@
     /* Add padding to the text contents to keep them within the container */
     padding: 10px;
     text-align: left;
+    box-sizing: border-box;
   }
 
   .general-info-name-image {
@@ -236,11 +236,13 @@
   
   .general-info {
     border: 5px solid green;
-    flex-direction: column;
+    /* flex-direction: column; */
+    box-sizing: border-box;
   }
 
   .general-info-row {
     flex-direction: column;
+    box-sizing: border-box;
   }
 
   .general-info-column {
