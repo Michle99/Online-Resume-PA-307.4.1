@@ -1,0 +1,278 @@
+.resume-container {
+    margin: auto;
+    background-color: rgb(132, 147, 159);
+    border: 5px solid rgb(19, 32, 19);
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/* Upper Resume section */
+.general-info {
+    border: 5px solid green;
+    /* display: flex;
+    flex-wrap: wrap; */
+    flex-basis: 100%;
+}
+
+.general-info-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.general-info-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/* Image and Resume Name */
+.general-info-name-image {
+    border: 5px solid rgb(62, 24, 255);
+    display: flex;
+}
+
+.general-info-name-image p, .general-info-name-image h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.general-info-name-image img {
+    margin: 1px;
+    padding: 5px;
+    border: 5px solid salmon;
+}
+.general-info-name-image-txt-cont {
+    text-align: left;
+    margin-left: 6px;
+    padding-bottom: 42px;
+    /* margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+}
+
+
+/* Personal Infos */
+.general-info-pinfos {
+    border: 5px solid rgb(205, 15, 81);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.general-info-pinfos p {
+    font-size: small;
+    margin: 2.3px;
+}
+
+.general-info-row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.general-info-double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+}
+
+/* Resume summary */
+.general-info-summary {
+    border: 5px solid rgb(231, 239, 12);
+}
+
+/** Employment **/
+.emp_edu {
+    border: 5px solid saddlebrown;
+}
+
+.employment {
+    margin: 15px;
+}
+
+/* Education */
+.education {
+    margin: 15px;
+}
+
+/** Skills **/
+.skills-list {
+    border: 5px solid rgb(248, 136, 56);
+}
+.programming-skills {
+    margin: 15px;
+}
+.skills-container {
+    width: 100%;
+    margin-top: -15px;
+    background-color: #232020;
+}
+.skills {
+    text-align: right;
+    color: aliceblue;
+}
+.wordpress {
+    width: 90%;
+    background-color: green;
+}
+.php {
+    width: 80%;
+    background-color: rgb(71, 176, 71);
+}
+.html {
+    width: 93%;
+    background-color: rgb(31, 57, 31);
+}
+.css {
+    width: 80%;
+    background-color: rgb(244, 207, 23);
+}
+.mysql {
+    width: 70%;
+    background-color: rgb(170, 4, 26);
+}
+
+/** Graphic SKills */
+.graphic-skills {
+    margin: 15px;
+}
+.graphic-skills-chld {
+    width: 15px; 
+    height: 15px; 
+    float: left;
+    border: 1px solid black; 
+    clear: both;
+}
+.photoshp { background-color: rgb(10, 77, 77); }
+.adb-illus { background-color: rgb(13, 130, 91);}
+.indesign { background-color: rgb(41, 91, 74);}
+.crl-drw { background-color: rgb(238, 184, 115);}
+.three-dmax { background-color: rgb(224, 28, 162); }
+
+/** Language Skills */
+.lang-skills {
+    margin: 15px;
+    padding-bottom: 93px;
+}
+.eng-skills-dots {
+    width: 15px; 
+    height: 15px; 
+    float: left;
+    border-radius: 50%;
+    border: 1px solid black; 
+    background-color: rgb(0, 113, 128);
+}
+.no-dot-colr {
+    width: 15px; 
+    height: 15px; 
+    float: left;
+    border-radius: 50%;
+    border: 1px solid black; 
+}
+.fr-skills-dots {
+    width: 15px; 
+    height: 15px; 
+    float: left;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(5, 65, 72);
+}
+.esp-skills-dots {
+    width: 15px; 
+    height: 15px; 
+    float: left;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(247, 254, 26);
+}
+
+
+/* Add this at the end of your existing CSS file */
+
+/* Add a media query for screens below 768px */
+@media (max-width: 768px) {
+  .resume-container {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  .general-info-name-image-txt-cont,
+  .general-info-pinfos,
+  .general-info-summary {
+    /* Add padding to the text contents to keep them within the container */
+    padding: 10px;
+    text-align: left;
+  }
+
+  .general-info-name-image {
+     /* Stack the image and name on top of each other */
+    flex-direction: column;
+  }
+  
+  .general-info {
+    border: 5px solid green;
+    flex-direction: column;
+  }
+
+  .general-info-row {
+    flex-direction: column;
+  }
+
+  .general-info-column {
+    flex-basis: auto;
+  }
+
+  .general-info-name-image-txt-cont {
+    text-align: left; /* Center the text in smaller screens */
+    margin: 0;
+    padding: 10px;
+  }
+
+  .general-info-pinfos {
+    display: block; /* Stack the personal info vertically */
+  }
+
+  .general-info-pinfos p {
+    margin: 5px 0; /* Add some spacing between paragraphs */
+  }
+
+  .general-info-summary {
+    border: 5px solid rgb(231, 239, 12);
+  }
+}
+
+/* Add a media query for screens below 390px */
+@media (max-width: 390px) {
+    .resume-container {
+      width: 100%; /* Adjust the width for even smaller screens */
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+  }
