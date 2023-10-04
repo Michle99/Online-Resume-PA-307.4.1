@@ -12,3 +12,4 @@ Clone the repository and run the HTML file.
 Download the Vscode plugin `Live Server` to view the resume on the web. 
 
 # Screenshots
+![Resume Screenshots](resume.gif)

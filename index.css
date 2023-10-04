@@ -9,7 +9,8 @@
 /* Upper Resume section */
 .general-info {
     border: 5px solid green;
-    padding: 15px;
+    padding: 10px;
+
 }
 
 .general-info-cont {
@@ -56,7 +57,7 @@
     width: 40%;
     flex-direction: column;
     justify-content: center;
-    align-content: space-between;
+    /* align-content: space-between; */
 }
 
 .general-info-pinfos p {
@@ -72,6 +73,7 @@
     display: flex;
     font-size: 20px;
     word-wrap: break-word;
+    margin: 5px;
 }
 
 .contact-info-cont>p>a {
@@ -93,7 +95,7 @@
 /* Resume summary */
 .general-info-summary {
     border: 5px solid rgb(231, 239, 12);
-    padding: 10px;
+    padding: 5px;
     height: fit-content;
 }
 
@@ -105,7 +107,7 @@
 .emp_edu {
     border: 5px solid saddlebrown;
     width: 70%;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .employment-header-cont {
